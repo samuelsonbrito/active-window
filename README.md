@@ -1,5 +1,3 @@
-# Attention, this library is not maintained anymore!!!
-
 # active-window
 > Get active window title in Node.js.
 
@@ -8,7 +6,7 @@ Compatible with Linux, Windows 7+, and OSX;
 ## Usage
 
 ```javascript
-var monitor = require('active-window');
+var monitor = require('simple-active-window');
 
 callback = function(window){
   try {
