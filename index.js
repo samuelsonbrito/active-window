@@ -1,6 +1,6 @@
 const fs = require('fs');
 const config = getConfig();
-
+const utf8 = require('utf8');
 /**
  * This callback handle the response request by getActiveWindow function
  * @callback getActiveWindowCallback
@@ -34,7 +34,7 @@ exports.getActiveWindow = function(callback, repeats, interval) {
 
     //Obtain successful response from script
     ls.stdout.on('data', function(stdout) {
-        callback(reponseTreatment(stdout.toString()));
+        callback(reponseTreatment(utf8.decode(stdout.toString())));
     });
 
     //Obtain error response from script
