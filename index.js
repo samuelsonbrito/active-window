@@ -34,7 +34,7 @@ exports.getActiveWindow = function(callback, repeats, interval) {
 
     //Obtain successful response from script
     ls.stdout.on('data', function(stdout) {
-        callback(reponseTreatment(utf8.decode(stdout.toString())));
+        callback(reponseTreatment(utf8.encode(stdout.toString())));
     });
 
     //Obtain error response from script

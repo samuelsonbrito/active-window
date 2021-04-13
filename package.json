@@ -1,6 +1,6 @@
 {
     "name": "simple-active-window",
-    "version": "0.4.0",
+    "version": "0.5.0",
     "description": "Get active window title.",
     "main": "index.js",
     "contributors": [{
